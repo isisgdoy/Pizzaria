@@ -1,0 +1,101 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Iansui&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: "Iansui", cursive;
+}
+
+html{ /* Institula que o html vai pegar toda a altura e largura da tela */
+    width: 100vw;
+    height: 100vw;
+    font-size: 40.5%; /*o valor da fonte em % fica responsivo*/
+    overflow-x:hidden ; /*tira a barra horizontal*/
+}
+
+/*Menu*/
+.content{
+    width: 100vw;
+    height: 70px;
+    display: flex;/*deixa os itens um do lado do outro*/
+    justify-content: space-around;/*espaçamento entre os itens*/
+    align-items: center; /*alinhar eles ao centro */
+    background-color: #2f2222;
+    position: fixed;
+    padding-left: 10rem;
+    transition: all 200ms ease-in;
+}
+
+.logo{
+    width: 95px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo h3{
+    color: white;
+    font-size: 2.6rem;  
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .list-menu{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .list-menu li a{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 200ms ease-in;
+}
+
+.content .list-menu li a:hover{
+    background-color: #483f3f;
+    border-bottom: 4px solid #f7cf4c;  
+    color: #f7cf4c;
+}
+.primeira-section{
+    height: 100vw;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(./img/fundo-pizza-2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.primeira-section .conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.primeira-section h1{
+    color: #f7cf4c;
+    font-size: 5.6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
