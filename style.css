@@ -72,8 +72,10 @@ html{ /* Institula que o html vai pegar toda a altura e largura da tela */
     border-bottom: 4px solid #f7cf4c;  
     color: #f7cf4c;
 }
+
+/* Conteudo principal */
 .primeira-section{
-    height: 100vw;
+    height: 100vh;
     background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url(./img/fundo-pizza-2.jpg);
     background-position: center center;
     background-size: cover;
@@ -81,7 +83,7 @@ html{ /* Institula que o html vai pegar toda a altura e largura da tela */
     background-position-y: 50px;
     width: 100vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -98,4 +100,221 @@ html{ /* Institula que o html vai pegar toda a altura e largura da tela */
     font-size: 5.6rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
+}
+
+.primeira-section h2{
+    color: rgb(177, 177, 177);
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.btn button{
+    width: 260px;
+    height: 60px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #f7cf4c;
+    border-radius: 10px;
+    color: black;
+    font-weight: 700;
+    margin-top: 5rem;
+
+    transition: all 400ms ease-in;
+}
+
+.btn button:hover{
+   /* border: 1px solid #f3df9d;*/
+    background-color: transparent;
+    color: #f7cf4c;
+}
+
+.btn {
+    width: 560px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Sobre nós */
+
+.sobre-nos {
+    background-color: #2f2222;
+    width: 100%;
+    padding-bottom: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-nos img{
+    width: 400px;
+    height: 400px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 2px solid rgb(155,155, 155);
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentSobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentSobre h2{
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.contentSobre p{
+    text-align: center;
+    font-size: 1.9rem;
+    width: 600px;
+}
+
+/* Cardápio */
+
+.cardapio{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(47 28 28 / 80%);
+}
+
+.cardapio h2{
+    font-size: 5rem;
+    color:aliceblue;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.itens-cardapio{
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 550px));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.itens-cardapio .info{
+    background-color: rgb(223, 223, 223);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+.itens-cardapio .info h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.itens-cardapio .info h4{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 150px 150px;
+    margin-left: 6rem;
+}
+
+.itens-cardapio .info h4 span{
+    font-size: 1.7rem;
+    color:#585858;
+    margin-left: 1.5rem;
+    text-decoration: underline;
+}
+.itens-cardapio img {
+    width: 100%;
+    height: 200px;
+}
+
+.itens-cardapio div{
+    background-color: #483f3f;
+    box-shadow: 0px 0px 4px 1px;
+}
+
+.itens-cardapio .info .btnPedir{
+    width: 200px;
+    height: 35px;
+    margin-top: 1.5rem;
+    background-color: #f7cf4c;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    transition: all 200ms ease-in;
+
+}
+
+.itens-cardapio .info .btnPedir:hover{
+    background-color: #684c4c;
+    color:white;
+}
+
+/* Contatos */
+
+.contato{
+    width: 100%;
+    background-color: #2f2222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: white;
+    padding-bottom: 4rem;
+}
+.contato h3{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+
+}
+
+.contatos-secao{
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+.contatos-secao i{
+    margin-right: 1rem;
+}
+
+.contatos-secao div{
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+.contatos-secao div:hover{
+    color: #f7cf4c;
+    
+}
+
+
+/* Footer */
+
+footer{
+    height: 25px;
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
